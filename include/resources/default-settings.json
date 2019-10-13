@@ -1,0 +1,509 @@
+{
+  "settings": {
+    "Main": [
+      {
+        "type": "upload-image",
+        "id": "logo",
+        "title": "Logo",
+        "content": "Select an image for your main logo. Recommended format is svg.",
+        "background-size": "auto 80px"
+      },
+      {
+        "type": "upload-image",
+        "id": "logo-2",
+        "title": "Logo 2",
+        "content": "The secondary logo is used on some menu variant like the transparent menu. Recommended format is svg.",
+        "background-size": "auto 80px"
+      },
+      {
+        "type": "upload-image",
+        "id": "favicon",
+        "title": "Favicon",
+        "content": "The small icon that appear at the top of the browser. Recommended format is png, recommended sizes are 64x64px.",
+        "background-size": "auto 64px"
+      },
+      {
+        "type": "font",
+        "id": "font-1",
+        "title": "Font 1",
+        "content": "The main font family of the site. The fonts are provided by Google Fonts, you can preview the fonts from fonts.google.com."
+      },
+      {
+        "type": "font",
+        "id": "font-2",
+        "title": "Font 2",
+        "content": "The secondary font family of the site."
+      },
+      {
+        "type": "select",
+        "id": "icons-family",
+        "title": "Icons",
+        "content": "The icons used on your site. For performance reasons you can load max one icons set.",
+        "value": [ "Icons Mind Line", "Icons Mind Solid", "Font Awesome" ]
+      },
+      {
+        "type": "color",
+        "id": "color-1",
+        "title": "Color 1",
+        "content": "Primary color of the site."
+      },
+      {
+        "type": "color",
+        "id": "color-2",
+        "title": "Color 2",
+        "content": "Secondary color."
+      },
+      {
+        "type": "color",
+        "id": "color-3",
+        "title": "Color 3",
+        "content": "Additional color."
+      }
+    ],
+    "Layout": [
+      {
+        "type": "select",
+        "id": "layout",
+        "title": "Page layout",
+        "content": "The site layout.",
+        "value": [ "Full width", "Boxed" ]
+      },
+      {
+        "type": "number",
+        "id": "site-width",
+        "title": "Page width",
+        "unit": "px",
+        "content": "The overall maximum width of the site."
+      },
+      {
+        "type": "number",
+        "id": "section-padding-v",
+        "title": "Vertical section space",
+        "unit": "px",
+        "content": "The top and bottom padding between each section of the pages."
+      },
+      {
+        "type": "number",
+        "id": "section-padding-v-mobile",
+        "title": "Mobile vertical section space",
+        "unit": "px",
+        "content": "The top and bottom padding between each section of the pages. Applied only on mobile devices."
+      },
+      {
+        "type": "number",
+        "id": "column-padding-v",
+        "title": "Vertical columns space",
+        "unit": "px",
+        "content": "The top and bottom padding of the columns."
+      },
+      {
+        "type": "number",
+        "id": "sidebar-width",
+        "title": "Sidebar width",
+        "unit": "px",
+        "content": "The sidebars width."
+      },
+      {
+        "type": "checkbox",
+        "id": "rtl",
+        "title": "RTL",
+        "content": "Enable the right to left layout."
+      }
+    ],
+    "Menu": {
+      "Main": [
+        {
+          "type": "select",
+          "id": "menu",
+          "title": "Menu type",
+          "content": "The site primary menu.",
+          "value": [ "Classic", "Top logo", "Boxed", "Icon", "Icon top", "Subtitle", "Big box", "Side", "Side collapse" ]
+        },
+        {
+          "type": "number",
+          "id": "menu-height",
+          "title": "Menu height",
+          "unit": "px",
+          "content": "The site menu height."
+        },
+        {
+          "type": "select",
+          "id": "menu",
+          "title": "Dropdown animation",
+          "content": "The animation on hover of the dropdown sub menu.",
+          "value": [ "Fade in", "Fade top", "Fade bottom", "Fade left", "Fade right", "Show scale", "Pulse", "Pulse horizontal" ]
+        },
+        {
+          "type": "select",
+          "id": "menu-position",
+          "title": "Menu position",
+          "content": "Menu position. This setting is supported only by horizontal menu types.",
+          "value": [ "Align left", "Align right" ]
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-transparent",
+          "title": "Transparent menu",
+          "content": "Make the menu look transparent. For dark backgrounds you may want to add the class 'light' to the menu. You can add it from the 'Custom css classes' setting below."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-wide",
+          "title": "Wide menu",
+          "content": "Enlarge the menu and make it full width. This setting is supported only by horizontal menu types."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-one-page",
+          "title": "One page menu",
+          "content": "Activate this setting if your site is one page and all the menu items link to different parts of the same page."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-fixed",
+          "title": "Fixed top menu",
+          "content": "Show the menu always on top. This setting is supported only by horizontal menu types."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-search-bar",
+          "title": "Search bar",
+          "content": "Display the menu search bar."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-search-button",
+          "title": "Search button",
+          "content": "Display the menu search button."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-social",
+          "title": "Social icons",
+          "content": "Display the social icons on the menu. Set the social icons links from the 'Social' settings area."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-shop",
+          "title": "Shopping cart",
+          "content": "Display the shipping cart. This setting require Woocommerce plugin."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-languages",
+          "title": "Languages menu",
+          "content": "Display the languages menu. This setting require WPML plugin or Polylang plugin."
+        },
+        {
+          "type": "text",
+          "id": "menu-css",
+          "title": "CSS classes",
+          "content": "Add custom css classes to the menu by insert here the classes names, separated by spaces."
+        }
+      ],
+      "Custom": [
+        {
+          "type": "code",
+          "id": "menu-custom-area",
+          "title": "Custom area",
+          "content": "Insert here the HTML code for the custom area content. You can use all the code snippets and code examples of themekit.dev/docs/html/.",
+          "mode": "htmlmixed",
+          "multilingual": true
+        },
+        {
+          "type": "code",
+          "id": "menu-big-box",
+          "title": "Big box area",
+          "content": "Insert here the HTML code for the box of the big box menu type. You can use all the code snippets and code examples of themekit.dev/docs/html/.",
+          "mode": "htmlmixed",
+          "multilingual": true
+        }
+      ],
+      "Top menu": [
+        {
+          "type": "checkbox",
+          "id": "menu-top",
+          "title": "Active",
+          "content": "Enable or disable the top menu. You can add the menu items from the Menu WordPress page."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-top-hide",
+          "title": "Hide on scroll",
+          "content": "Hide the top menu on page scroll."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-top-search-bar",
+          "title": "Search bar",
+          "content": "Display the top menu search bar."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-top-social",
+          "title": "Social icons",
+          "content": "Display the social icons on the top menu. Set the social icons links from the 'Social' settings area."
+        },
+        {
+          "type": "checkbox",
+          "id": "menu-top-languages",
+          "title": "Languages menu",
+          "content": "Display the languages menu on the top menu. This setting require WPML plugin or Polylang plugin."
+        }
+      ]
+    },
+    "Footer": [
+      {
+        "type": "select",
+        "id": "footer-type",
+        "title": "Footer type",
+        "content": "Choose the footer type.",
+        "value": [ "Default", "Parallax" ]
+      },
+      {
+        "type": "checkbox",
+        "id": "footer-wide",
+        "title": "Wide footer",
+        "content": "Enlarge the footer and make it full width."
+      },
+      {
+        "type": "select",
+        "id": "footer-columns",
+        "title": "Columns and layout",
+        "content": "Set the footer layout and the number of columns. The layout is based on the Bootstrap Grid System.",
+        "value": [ "4-4-4", "3-3-3-3", "3-6-3", "6-3-3", "6-6" ]
+      },
+      {
+        "type": "checkbox",
+        "id": "footer-scroll-top",
+        "title": "Scroll top",
+        "content": "Display the scroll to top button."
+      },
+      {
+        "type": "checkbox",
+        "id": "footer-social",
+        "title": "Social icons",
+        "content": "Display the social icons on the footer. Set the social icons links from the 'Social' settings area."
+      },
+      {
+        "type": "select",
+        "id": "footer-social-position",
+        "title": "Social icons position",
+        "content": "Set where to display the social icons.",
+        "value": [ "Column 1", "Column 2", "Column 3", "Column 4" ]
+      },
+      {
+        "type": "checkbox",
+        "id": "footer-menu",
+        "title": "Menu",
+        "content": "Enable or disable the footer menu. You can add the menu items from the Menu WordPress page."
+      },
+      {
+        "type": "select",
+        "id": "footer-menu-position",
+        "title": "Menu position",
+        "content": "Set where to display the footer menu.",
+        "value": [ "Column 1", "Column 2", "Column 3", "Column 4" ]
+      },
+      {
+        "type": "text",
+        "id": "footer-css",
+        "title": "CSS classes",
+        "content": "Add custom css classes to the footer by insert here the classes names, separated by spaces."
+      },
+      {
+        "type": "number",
+        "id": "footer-padding-v",
+        "title": "Vertical footer space",
+        "unit": "px",
+        "content": "The top and bottom padding of the footer."
+      },
+      {
+        "type": "select",
+        "id": "footer-alignment",
+        "title": "Contents alignment",
+        "content": "Set the alignment of the footer contents.",
+        "value": [ "Align left", "Align right", "Align center" ]
+      },
+      {
+        "type": "code",
+        "id": "footer-1",
+        "title": "Column 1",
+        "content": "Insert here the HTML code for the first footer column. You can use all the code snippets and code examples of themekit.dev/docs/html/.",
+        "mode": "htmlmixed",
+        "multilingual": true
+      },
+      {
+        "type": "code",
+        "id": "footer-2",
+        "title": "Column 2",
+        "content": "Insert here the HTML code for the second footer column.",
+        "mode": "htmlmixed",
+        "multilingual": true
+      },
+      {
+        "type": "code",
+        "id": "footer-3",
+        "title": "Column 3",
+        "content": "Insert here the HTML code for the third footer column. This column is not displayed for the '6-6' layout.",
+        "mode": "htmlmixed",
+        "multilingual": true
+      },
+      {
+        "type": "code",
+        "id": "footer-4",
+        "title": "Column 4",
+        "content": "Insert here the HTML code for the fourth footer column. This column is displayed only with the '3-3-3-3' layout.",
+        "mode": "htmlmixed",
+        "multilingual": true
+      },
+      {
+        "type": "text",
+        "id": "footer-copyright",
+        "title": "Copyright",
+        "content": "The text displayed at the bottom of the footer.",
+        "multilingual": true
+      }
+    ],
+    "Customizations": [
+      {
+        "type": "code",
+        "id": "global-css",
+        "title": "CSS",
+        "content": "Insert here the custom css code, it will be applied globally.",
+        "mode": "css"
+      },
+      {
+        "type": "code",
+        "id": "global-js",
+        "title": "Javascript",
+        "content": "Insert here the custom Javascript or JQuery code, it will be applied globally.",
+        "mode": "javascript"
+      }
+    ],
+    "Social": [
+      {
+        "type": "multi-input",
+        "id": "social-links",
+        "title": "Social channels",
+        "content": "Insert here the links to your social channels.",
+        "value": [
+          {
+            "type": "text",
+            "id": "facebook",
+            "title": "Facebook"
+          },
+          {
+            "type": "text",
+            "id": "twitter",
+            "title": "Twitter"
+          },
+          {
+            "type": "text",
+            "id": "youtube",
+            "title": "Youtube"
+          },
+          {
+            "type": "text",
+            "id": "vimeo",
+            "title": "Vimeo"
+          },
+          {
+            "type": "text",
+            "id": "instagram",
+            "title": "Instagram"
+          },
+          {
+            "type": "text",
+            "id": "linkedin",
+            "title": "Linkedin"
+          },
+          {
+            "type": "text",
+            "id": "pinterest",
+            "title": "Pinterest"
+          }
+        ]
+      }
+    ],
+    "Advanced": {
+      "APIs": [
+        {
+          "type": "text",
+          "id": "google-map-key",
+          "title": "Google Maps Key",
+          "content": "Insert here your Google Maps Key. The key is required to make the maps work. Please see the documentation for instructions and more details."
+        },
+        {
+          "type": "text",
+          "id": "google-tracking-id",
+          "title": "Google Analytics ID",
+          "content": "Insert here your Google Analytics Tracking ID (ex. UA-000000-2) to start monitoring you site traffic through Google Analytics."
+        },
+        {
+          "type": "multi-input",
+          "id": "smtp",
+          "title": "SMTP email",
+          "content": "Insert here your SMTP server information if you want the Contact Form component to send the emails through it. You can retrive this information at your hosting documentation. The default port is 465.",
+          "value": [
+            {
+              "type": "text",
+              "id": "host",
+              "title": "Host"
+            },
+            {
+              "type": "text",
+              "id": "username",
+              "title": "Username"
+            },
+            {
+              "type": "text",
+              "id": "password",
+              "title": "Password"
+            },
+            {
+              "type": "text",
+              "id": "port",
+              "title": "Port"
+            },
+            {
+              "type": "text",
+              "id": "sender",
+              "title": "Sender email"
+            }
+          ]
+        },
+        {
+          "type": "multi-input",
+          "id": "recaptcha",
+          "title": "reCaptcha",
+          "content": "Insert here your reCapthca V3 keys if you want to use the Google reCaptcha system with the Contact Form component.",
+          "value": [
+            {
+              "type": "text",
+              "id": "recaptcha-public",
+              "title": "Public Key"
+            },
+            {
+              "type": "text",
+              "id": "recaptcha-secret",
+              "title": "Secret Key"
+            }
+          ]
+        }
+      ],
+      "System requirements": [
+        {
+          "type": "system-requirements",
+          "id": "system-requrements",
+          "title": "System requirements",
+          "content": "These are the recommended minimum requirements of your hosting and site. Do not worry if something is red, but if anything on the website do not work as expected the red items could be the issue.",
+          "value": [ "memory-limit", "upload-max-size", "post-max-size", "max-execution-time", "zip", "uploads-folder-writable", "php-version" ]
+        }
+      ]
+    }
+  },
+  "advanced": {
+    "hidden-items": [ "font-1", "font-2", "icons-family", "favicon", "rtl", "section-padding-v", "column-padding-v", "footer-1", "footer-2", "footer-3", "footer-4", "footer-copyright", "footer-columns", "Customizations", "Social", "Advanced", "Import and export" ]
+  }
+}

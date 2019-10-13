@@ -1,0 +1,1840 @@
+
+/*
+
+===========================================================
+MAIN CSS - THEMEKIT FRAMEWORK
+===========================================================
+
+
+# ICONS
+===========================================================
+
+*/
+
+@font-face {
+    font-family: "Themekit Options Icons";
+    src: url("../media/icons/icons.eot");
+    src: url("../media/icons/icons.eot?#iefix") format("embedded-opentype"), url("../media/icons/icons.woff") format("woff"), url("../media/icons/icons.ttf") format("truetype"), url("../media/icons/icons.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="themekit-options-i-"]:before,
+[class*=" themekit-options-i-"]:before {
+    font-family: "Themekit Options Icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.themekit-options-i-arrow-down:before {
+    content: "\61";
+}
+
+.themekit-options-i-arrow-left:before {
+    content: "\62";
+}
+
+.themekit-options-i-arrow-right:before {
+    content: "\63";
+}
+
+.themekit-options-i-arrow-up:before {
+    content: "\64";
+}
+
+.themekit-options-i-close:before {
+    content: "\65";
+}
+
+.themekit-options-i-upload:before {
+    content: "\66";
+}
+
+.themekit-options-i-download:before {
+    content: "\67";
+}
+
+.themekit-options-i-plus:before {
+    content: "\68";
+}
+
+.themekit-options-i-loader:before {
+    content: "\69";
+}
+
+.themekit-options-i-help:before {
+    content: "\6a";
+}
+
+.themekit-options-i-check:before {
+    content: "\6b";
+}
+
+/* 
+
+# ANIMATIONS
+===========================================================
+
+*/
+
+@keyframes themekit-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 
+
+# GLOBAL
+===========================================================
+
+-----------------------------------------------------------
+BUTTON
+-----------------------------------------------------------
+*/
+
+.themekit-button, .themekit-setting:not(.themekit-wp-editor) .input button, .themekit-color .wp-color-result-text, .themekit-setting > .input .wp-picker-input-wrap .button {
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 1px 0 #ccc;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    height: 35px;
+    line-height: 32px;
+    padding: 0 12px 2px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 13px;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.themekit-button:hover, .themekit-setting:not(.themekit-wp-editor) .input button:hover, .themekit-color .wp-color-result-text:hover, .themekit-setting > .input .wp-picker-input-wrap .button:hover {
+    background: rgb(250, 250, 250);
+    border-color: rgb(153, 153, 153);
+    color: rgb(85, 85, 85);
+}
+
+.themekit-button:active, .themekit-setting:not(.themekit-wp-editor) .input button:active, .themekit-color .wp-color-result-text:active, .themekit-setting > .input .wp-picker-input-wrap .button:active {
+    background: rgb(238, 238, 238);
+    border-color: rgb(153, 153, 153);
+    box-shadow: inset 0 1px 0 #999;
+    color: rgb(85, 85, 85);
+}
+
+.themekit-button.themekit-button-blue {
+    background: rgb(0, 133, 186);
+    border-color: rgb(0, 115, 170) rgb(0, 103, 153) rgb(0, 103, 153);
+    box-shadow: 0 1px 0 #006799;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+.themekit-button.themekit-button-blue:hover {
+    background: rgb(0, 142, 194);
+    border-color: rgb(0, 103, 153);
+}
+
+.themekit-button.themekit-button-blue:active {
+    background: rgb(0, 115, 170);
+    border-color: rgb(0, 103, 153);
+    box-shadow: inset 0 2px 0 #006799;
+}
+
+/*
+-----------------------------------------------------------
+HELP BUTTON
+-----------------------------------------------------------
+*/
+
+.themekit-help {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-decoration: none;
+    color: rgba(85, 93, 102, 0.46);
+    font-weight: 400;
+    text-align: center;
+    margin: 0 5px;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.themekit-help:before {
+    content: "\6a";
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+    z-index: 1;
+}
+
+/*
+-----------------------------------------------------------
+CLOSE BUTTON
+-----------------------------------------------------------
+*/
+
+.themekit-close {
+    cursor: pointer;
+}
+
+.themekit-close:hover, .themekit-header > p > i:hover {
+    color: rgb(217, 79, 79);
+}
+
+.themekit-close:before, .themekit-header > p > i:before, .themekit-upload-image > .input > .image > i:before, .themekit-system-requirements .input > div.invalid > i:before {
+    content: "\65";
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+-----------------------------------------------------------
+LOADING 
+-----------------------------------------------------------
+*/
+
+.themekit-loading:before, .themekit-options-save:before, .themekit-import .progress li:last-child span:before, .themekit-export .progress li:last-child span:before {
+    content: "\69";
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+    position: absolute;
+    z-index: 1;
+    text-indent: 0px;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -11.5px;
+    right: 11px;
+    width: 22px;
+    height: 22px;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+/* 
+
+# THEME OPTIONS
+===========================================================
+
+*/
+
+.themekit-panel {
+    display: flex;
+    max-width: 1200px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    color: rgb(85, 93, 102);
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+}
+
+.themekit-panel ul {
+    margin: 0;
+    list-style: none;
+}
+
+.themekit-panel > ul {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(226, 228, 231);
+    width: 20%;
+    max-width: 250px;
+}
+
+.themekit-panel > ul li {
+    margin: 0;
+    position: relative;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.themekit-panel > ul li a {
+    font-weight: 600;
+    text-align: left;
+    color: rgb(25, 30, 35);
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 15px;
+    border-bottom: 1px solid rgb(226, 228, 231);
+    position: relative;
+    z-index: 1;
+    transition: all .1s;
+}
+
+.themekit-panel > ul > li > ul > li:hover > a, .themekit-panel > ul > li > ul > li.active > a {
+    color: rgb(23, 115, 169);
+}
+
+.themekit-panel > ul > li.active > ul {
+    position: relative;
+}
+
+.themekit-panel > ul > li.active > ul:before, .themekit-panel > ul > li.active > ul:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
+    bottom: 0;
+}
+
+.themekit-panel > ul > li.active > ul:before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+    top: 0;
+    bottom: auto;
+    height: 8px;
+}
+
+.themekit-panel > ul > li:hover > a, .themekit-panel > ul > li.active > a {
+    background: rgb(23, 115, 169);
+    color: #FFF;
+}
+
+.themekit-panel > ul > li.active > a, .themekit-panel > ul > li:hover > a {
+    border-bottom: 1px solid rgb(72, 141, 181);
+}
+
+.themekit-panel > ul li ul li:last-child a {
+    border-bottom: none;
+}
+
+.themekit-panel > ul li ul {
+    height: 0;
+}
+
+.themekit-panel > ul li.active ul {
+    height: 100%;
+    border-bottom: 1px solid rgb(226, 228, 231);
+    background: rgb(252, 252, 252);
+}
+
+.themekit-panel > main {
+    width: 100%;
+    max-width: calc(100% - 250px);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(226, 228, 231);
+    border-left: none;
+    position: relative;
+    padding: 30px;
+}
+
+.themekit-panel > main > section:not(.active), .themekit-inner-section:not(.active) {
+    display: none;
+}
+
+.themekit-dropdown:after {
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+    content: "\61";
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    right: 11px;
+}
+
+.themekit-dropdown.active:after {
+    transform: rotate(180deg);
+    top: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.themekit-dropdown:hover:after {
+    color: rgb(255, 255, 255);
+}
+
+.themekit-header {
+    max-width: 1200px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid rgb(226, 228, 231);
+    border-bottom: none;
+    min-height: 100px;
+    z-index: 9999;
+    margin-right: 20px;
+}
+
+.themekit-header > div {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.themekit-header > div > img {
+    max-height: 39px;
+}
+
+.themekit-header a {
+    font-size: 14px;
+    line-height: 39px;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    color: rgb(35, 40, 45);
+    margin: 0 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.themekit-header a:last-child {
+    margin-right: 0;
+}
+
+.themekit-header a.themekit-button {
+    height: 35px;
+    max-height: 35px;
+    line-height: 34px;
+    min-width: 45px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.themekit-header.themekit-fixed-top {
+    position: fixed;
+    top: 11px;
+    min-height: 52px;
+    z-index: 9999;
+    width: 100%;
+    border-bottom: 1px solid rgb(226, 228, 231);
+}
+
+.themekit-header.themekit-fixed-top > div {
+    padding: 5px 15px;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.themekit-header.themekit-fixed-top > div > img {
+    max-height: 30px;
+}
+
+.themekit-header.themekit-fixed-top + .themekit-panel {
+    margin-top: 100px;
+}
+
+.themekit-header > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.themekit-header > p {
+    display: none;
+    border-left: 4px solid rgb(74, 184, 102);
+    background-color: rgb(239, 249, 241);
+    line-height: 40px;
+    padding: 0 15px;
+    margin: 0;
+    position: relative;
+}
+
+.themekit-header > p.active {
+    display: block;
+}
+
+.themekit-header > p > i {
+    position: absolute;
+    z-index: 9;
+    right: 10px;
+    top: 14px;
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    cursor: pointer;
+    color: rgb(108, 119, 129);
+}
+
+.themekit-header > p.themekit-error {
+    border-left-color: rgb(217, 79, 79);
+    background-color: rgb(249, 226, 226);
+}
+
+.themekit-header > div > div > i.themekit-close {
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    margin-right: 2px;
+    transition: background-color .3s, color .3s, border-color .3s;
+    cursor: pointer;
+}
+
+main.themekit-loading:before {
+    top: 50px;
+    color: rgb(23, 115, 169);
+    animation: themekit-loading .6s linear infinite;
+}
+
+main.themekit-loading > section {
+    opacity: 0;
+}
+
+body.themekit-options #post-body-content {
+    z-index: 1;
+}
+
+/* 
+
+# INPUTS
+===========================================================
+
+-----------------------------------------------------------
+GLOBAL
+-----------------------------------------------------------
+
+*/
+
+.themekit-setting {
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgb(226, 228, 231);
+    display: flex;
+}
+
+.themekit-setting:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.themekit-setting > .content {
+    display: block;
+    width: 50%;
+}
+
+.themekit-setting > .content > h2, #poststuff .themekit-setting > .content > h2 {
+    margin-top: 0;
+    font-size: 14px;
+    color: rgb(35, 40, 45);
+    display: block;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 13px;
+}
+
+.themekit-setting > .content > p {
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 0;
+}
+
+.themekit-setting > .input {
+    padding: 0 0 0 30px;
+    width: 50%;
+    min-width: 50%;
+}
+
+.themekit-setting:not(.themekit-wp-editor) > .input input, .themekit-setting:not(.themekit-wp-editor) > .input textarea, .themekit-setting > .input select, .themekit-setting > .input input[type=text].wp-color-picker {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    padding: 6px 8px;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow .1s linear;
+    border-radius: 4px;
+    border: 1px solid rgb(141, 150, 160);
+    background: rgb(255, 255, 255);
+    margin: 0;
+    width: 100%;
+}
+
+.themekit-setting > .input input:focus, .themekit-setting > .input textarea:focus, .themekit-setting > .input select:focus, .themekit-setting > .input input[type=text].wp-color-picker:focus {
+    color: rgb(25, 30, 35);
+    border-color: rgb(0, 160, 210);
+    box-shadow: 0 0 0 1px #00a0d2;
+    outline: 2px solid rgba(0, 0, 0, 0);
+    outline-offset: -2px;
+}
+
+.themekit-options-save {
+    position: relative;
+    overflow: hidden;
+    min-width: 25px;
+}
+
+.themekit-options-save.themekit-loading {
+    text-indent: -999995px;
+    width: 45px;
+}
+
+.themekit-options-save:before {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity .5s;
+    animation: themekit-loading 1s linear infinite;
+}
+
+.themekit-options-save.themekit-loading:before {
+    opacity: 1;
+    transition: none;
+}
+
+.themekit-setting .input [data-language] {
+    margin-top: 0;
+}
+
+.themekit-setting .themekit-language {
+    padding: 15px 0 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.themekit-setting .themekit-language:first-child {
+    padding-top: 0;
+}
+
+.themekit-setting .themekit-language img {
+    height: 12px;
+    margin-right: 10px;
+}
+
+.themekit-setting .themekit-language span {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.themekit-setting .button-area label {
+    line-height: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    padding-left: 15px;
+    color: rgb(217, 79, 79);
+}
+
+/*
+-----------------------------------------------------------
+INFORMATION
+-----------------------------------------------------------
+*/
+
+.themekit-panel .themekit-information {
+    box-shadow: 0 1px 2px rgb(174, 186, 193);
+    padding: 15px;
+    border-bottom: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background: rgb(239, 245, 249);
+}
+
+.themekit-information > .content {
+    width: 100%;
+}
+
+.themekit-information > .content > p {
+    margin-bottom: 0;
+}
+
+/*
+-----------------------------------------------------------
+TEXT
+-----------------------------------------------------------
+*/
+
+.themekit-text input {
+    height: 35px;
+}
+
+/*
+-----------------------------------------------------------
+TEXTAREA
+-----------------------------------------------------------
+*/
+
+.themekit-setting > .input > textarea {
+    min-height: 100px;
+}
+
+/*
+-----------------------------------------------------------
+SELECT
+-----------------------------------------------------------
+*/
+
+.themekit-select select, .themekit-font select {
+    height: 35px;
+    max-height: 35px;
+    box-sizing: border-box;
+}
+
+/*
+-----------------------------------------------------------
+CHECKBOX
+-----------------------------------------------------------
+*/
+
+.themekit-checkbox > .input input[type=checkbox], .themekit-multi-input > .input input[type=checkbox] {
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    margin: 0;
+}
+
+.themekit-checkbox > .input input[type=checkbox]:checked:before, .themekit-multi-input > .input input[type=checkbox]:checked:before {
+    margin: 5px 0 0 2px;
+    font-size: 25px;
+    color: rgb(30, 140, 190) !important;
+}
+
+/*
+-----------------------------------------------------------
+RADIO
+-----------------------------------------------------------
+*/
+
+.themekit-radio > .input > div {
+    padding-bottom: 15px;
+}
+
+.themekit-radio > .input > div:last-child {
+    padding-bottom: 0;
+}
+
+.themekit-setting.themekit-radio > .input > div > input {
+    border: 1px solid rgb(141, 150, 160);
+    box-shadow: none;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.themekit-setting.themekit-radio > .input > div > input[type=radio]:checked:before {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    background-color: rgb(30, 140, 190) !important;
+}
+
+.themekit-radio > .input > div > label {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/*
+-----------------------------------------------------------
+NUMBER
+-----------------------------------------------------------
+*/
+
+.themekit-number input {
+    max-width: 100px;
+    height: 35px;
+}
+
+.themekit-number input + label {
+    transform: translateY(-4px);
+    display: inline-block;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+/*
+-----------------------------------------------------------
+NUMBER X 4
+-----------------------------------------------------------
+*/
+
+.themekit-number-4 > .input {
+    display: flex;
+}
+
+.themekit-setting.themekit-number-4 > .input input {
+    max-width: 100px;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.themekit-number-4 input + label {
+    display: block;
+    line-height: 35px;
+    margin-right: 15px;
+}
+
+.themekit-number-4 input + label:last-child {
+    margin-right: 0;
+}
+
+/*
+-----------------------------------------------------------
+UPLOAD
+-----------------------------------------------------------
+*/
+
+.themekit-upload input[type=file], .themekit-multi-input > .input > .multi-input-upload input[type=file], .themekit-input-upload input[type=file] {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+}
+
+.themekit-upload > .input, .themekit-multi-input > .input > .multi-input-upload, .themekit-input-upload {
+    display: flex;
+}
+
+.themekit-setting.themekit-upload input[type=url], .themekit-setting.themekit-multi-input > .input > .multi-input-upload input[type=url], .themekit-setting .themekit-input-upload input[type=url] {
+    height: 35px;
+    margin-right: 15px;
+}
+
+.themekit-setting .input .themekit-input-upload button {
+    margin-top: 0;
+}
+
+/*
+-----------------------------------------------------------
+UPLOAD IMAGE
+-----------------------------------------------------------
+*/
+
+.themekit-upload-image input[type=file] {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+}
+
+.themekit-upload-image > .input > .image {
+    border: 1px dashed rgb(141, 150, 160);
+    background-color: rgb(247, 247, 247);
+    height: 100px;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+.themekit-upload-image > .input > .image:before {
+    content: "\68";
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    color: rgb(141, 150, 160);
+    transition: all .3s;
+}
+
+.themekit-upload-image > .input > .image[data-url]:before {
+    display: none;
+}
+
+.themekit-upload-image > .input > .image:hover:before {
+    color: rgb(49, 98, 146);
+}
+
+.themekit-upload-image > .input > .image > i:hover {
+    color: rgb(217, 79, 79);
+}
+
+.themekit-upload-image > .input > .image:hover {
+    background-color: rgb(248, 249, 249);
+    border-color: rgb(27, 133, 186);
+}
+
+.themekit-upload-image > .input > .image > i {
+    position: absolute;
+    z-index: 9;
+    right: 10px;
+    top: 10px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.themekit-upload-image > .input > .image[data-url] > i {
+    display: block;
+}
+
+/*
+-----------------------------------------------------------
+CODE
+-----------------------------------------------------------
+*/
+
+.themekit-setting.themekit-code {
+    display: block;
+    padding-bottom: 25px;
+}
+
+.themekit-code > .content {
+    width: auto;
+}
+
+.themekit-code > .input {
+    padding: 0;
+    margin-top: 20px;
+    width: auto;
+}
+
+.themekit-code > .input > .CodeMirror {
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.themekit-code .CodeMirror-scroll {
+    width: 100%;
+}
+
+.themekit-code .CodeMirror-lines {
+    padding: 0;
+}
+
+.themekit-code .CodeMirror-sizer {
+    border-right: none;
+    margin-left: 30px !important;
+}
+
+.themekit-code .CodeMirror-gutters {
+    min-width: 29px;
+}
+
+/*
+-----------------------------------------------------------
+COLOR
+-----------------------------------------------------------
+*/
+
+.themekit-color .wp-picker-container {
+    position: relative;
+}
+
+.themekit-color .wp-picker-container .wp-picker-holder {
+    position: absolute;
+    top: 37px;
+}
+
+.themekit-color .wp-picker-active .wp-picker-holder {
+    z-index: 9;
+}
+
+.themekit-color .wp-picker-container .wp-color-result.button {
+    background-color: rgb(241, 241, 241);
+    overflow: visible;
+    width: 35px;
+    height: 35px;
+    margin-right: 125px;
+    border: none;
+    box-shadow: none;
+    position: relative;
+}
+
+.themekit-color .wp-color-result-text {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    margin-left: 35px;
+}
+
+.themekit-setting > .input input[type=text].wp-color-picker {
+    width: 72px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.themekit-setting > .input .wp-picker-input-wrap .button {
+    width: auto;
+}
+
+/*
+-----------------------------------------------------------
+FONT
+-----------------------------------------------------------
+*/
+
+.themekit-setting > .input > div {
+    display: flex;
+}
+
+.themekit-setting > .input select {
+    width: 70%;
+    min-width: 70%;
+}
+
+.themekit-setting > .input .font-variants {
+    width: 30%;
+    min-width: 30%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.themekit-setting > .input .font-variants > div {
+    display: flex;
+    padding-bottom: 7px;
+}
+
+.themekit-setting > .input .font-variants > div:last-child {
+    padding-bottom: 0;
+}
+
+.themekit-setting > .input .font-variants input {
+    width: 20px;
+    height: 20px;
+}
+
+.themekit-setting > .input .font-variants input[type=checkbox]:checked:before {
+    margin: 1px 0 0 -1px;
+    font-size: 18px;
+    color: rgb(30, 140, 190) !important;
+}
+
+.themekit-setting > .input .font-variants label {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+/*
+-----------------------------------------------------------
+MULTI INPUT
+-----------------------------------------------------------
+*/
+
+.themekit-multi-input > .input > div {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.themekit-multi-input > .input > div:last-child {
+    padding-bottom: 0;
+}
+
+.themekit-multi-input > .input label {
+    font-weight: 600;
+    font-size: 13px;
+    min-width: 30%;
+    line-height: 35px;
+}
+
+/*
+-----------------------------------------------------------
+IMPORT AND EXPORT
+-----------------------------------------------------------
+*/
+
+.themekit-import > .input > .options, .themekit-export > .input > .options, .themekit-export > .input > .advanced {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7px;
+    margin-bottom: 20px;
+}
+
+.themekit-import > .input .options > div, .themekit-export > .input .options > div, .themekit-export > .input > .advanced > div {
+    display: flex;
+}
+
+.themekit-import > .input .options input, .themekit-export > .input .options input, .themekit-export > .input .advanced input {
+    width: 20px;
+    height: 20px;
+}
+
+.themekit-import > .input .options input[type=checkbox]:checked:before, .themekit-export > .input .options input[type=checkbox]:checked:before, .themekit-export > .input .advanced input[type=checkbox]:checked:before {
+    margin: 1px 0 0 -1px;
+    font-size: 18px;
+    color: rgb(30, 140, 190) !important;
+}
+
+.themekit-import > .input .options > div > label, .themekit-export > .input .options > div > label, .themekit-export > .input .advanced > div > label {
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.themekit-import .option-revslider:not(.visible), .themekit-import .option-woocommerce_products:not(.visible) {
+    display: none !important;
+}
+
+.themekit-import > .input > label, .themekit-export > .input > label {
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 30%;
+    margin-bottom: 20px;
+    display: block;
+    cursor: default;
+}
+
+.themekit-import > .input select {
+    height: 35px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.themekit-import > .input .button-area, .themekit-export > .input button {
+    margin-top: 15px;
+}
+
+.themekit-import > .input .imports.single + button {
+    margin-top: 5px;
+}
+
+.themekit-import .imports.thumbs select, .themekit-import .imports.single select, .themekit-select-image select {
+    display: none !important;
+}
+
+.themekit-import .imports.thumbs, .themekit-select-image > .input > .thumbs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.themekit-import .imports.thumbs > div, .themekit-select-image .input > .thumbs div {
+    min-height: 0;
+    min-width: 0;
+    display: block;
+}
+
+.themekit-import .imports.thumbs img, .themekit-select-image .input img {
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.themekit-import .imports.thumbs > div > span, .themekit-select-image .thumbs div > span {
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(236, 236, 236);
+    box-shadow: 0 1px 3px rgba(99, 99, 99, 0.17);
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    transition: all .3s;
+}
+
+.themekit-import .imports.thumbs > div:hover > span, .themekit-import .imports.thumbs > div.active > span, .themekit-select-image .thumbs > div:hover > span, .themekit-select-image .thumbs > div.active > span {
+    border-color: rgb(0, 160, 210);
+}
+
+.themekit-import .imports.thumbs > div:hover > p, .themekit-import .imports.thumbs > div.active > p, .themekit-select-image .thumbs > div:hover > p, .themekit-select-image .thumbs > div.active > p {
+    color: rgb(0, 160, 210)
+}
+
+.themekit-import .imports.thumbs > div.active img, .themekit-select-image .thumbs > div.active img {
+    border: 1px solid rgb(0, 160, 210);
+}
+
+.themekit-import .imports.thumbs > div > p, .themekit-select-image .thumbs > div > p {
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.themekit-import .themekit-information, .themekit-export .themekit-information {
+    margin-top: 20px;
+}
+
+.themekit-import .themekit-information b {
+    margin-top: 10px;
+    display: block;
+}
+
+.themekit-import .progress, .themekit-export .progress {
+    margin-top: 20px;
+}
+
+.themekit-import .progress li, .themekit-export .progress li {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.themekit-import .progress li span, .themekit-export .progress li span {
+    background-color: rgb(246, 246, 246);
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 15px;
+    transform: translateY(2px);
+    text-align: center;
+    border-left: 2px solid rgb(85, 93, 102);
+}
+
+.themekit-import .progress li:not(:last-child) span {
+    border-left: 2px solid rgb(74, 184, 102);
+    background-color: rgb(239, 249, 241);
+}
+
+.themekit-import .progress li:not(:last-child) {
+    color: rgb(44, 167, 75);
+}
+
+.themekit-import .progress li:last-child, .themekit-export .progress li:last-child {
+    color: rgb(27, 133, 186);
+}
+
+.themekit-import .progress li:last-child span, .themekit-export .progress li:last-child span {
+    text-indent: -999995px;
+    background: none;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.themekit-import .progress li:last-child span:before, .themekit-export .progress li:last-child span:before {
+    animation: themekit-loading .6s linear infinite;
+}
+
+.themekit-import .themekit-input-upload, .themekit-import > .input input.envato-code {
+    margin-bottom: 20px;
+}
+
+.themekit-import .themekit-input-upload input[type="url"] {
+    color: rgb(113, 113, 113);
+}
+
+.themekit-import .themekit-help {
+    right: 25px;
+}
+
+/*
+-----------------------------------------------------------
+WP EDITOR
+-----------------------------------------------------------
+*/
+
+.themekit-setting.themekit-wp-editor {
+    display: block;
+    padding-bottom: 25px;
+}
+
+.themekit-wp-editor > .content {
+    width: auto;
+}
+
+.themekit-wp-editor > .input {
+    padding: 0;
+    margin-top: 20px;
+    width: auto;
+}
+
+.themekit-wp-editor .input > div {
+    display: block;
+}
+
+.themekit-wp-editor .mce-container > iframe {
+    max-width: calc(100% - 1px);
+}
+
+.themekit-wp-editor .mce-top-part::before, .themekit-wp-editor .mce-tinymce {
+    box-shadow: none;
+}
+
+/*
+-----------------------------------------------------------
+RANGE
+-----------------------------------------------------------
+*/
+
+.themekit-range > .input {
+    display: flex;
+}
+
+.themekit-range .range-value {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    height: 35px;
+    width: 20px;
+    margin-right: 15px;
+}
+
+.themekit-range .rangeslider + label {
+    display: block;
+    line-height: 18px;
+    margin-left: 15px;
+}
+
+.rangeslider, .rangeslider__fill {
+    display: block;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.rangeslider {
+    background: rgb(232, 232, 232);
+    height: 2px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.rangeslider__fill {
+    background: rgb(85, 93, 102);
+    position: absolute;
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 0;
+    height: 100%;
+}
+
+.rangeslider__handle {
+    background: rgb(85, 93, 102);
+    cursor: pointer;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/*
+-----------------------------------------------------------
+SELECT IMAGE
+-----------------------------------------------------------
+*/
+
+.themekit-select-image > .input > [data-columns='1'] {
+    grid-template-columns: 1fr;
+}
+
+.themekit-select-image > .input > [data-columns='2'] {
+    grid-template-columns: 1fr 1fr;
+}
+
+.themekit-select-image > .input > [data-columns='4'] {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.themekit-select-image > .input > [data-columns='5'] {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.themekit-select-image > .input > [data-columns='6'] {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*
+-----------------------------------------------------------
+SYSTEM REQUIREMENTS
+-----------------------------------------------------------
+*/
+
+.themekit-system-requirements .input > div > i {
+    color: rgb(74, 184, 102);
+    background: rgb(239, 249, 241);
+    width: 26px;
+    height: 26px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 15px;
+    margin-top: -3px;
+}
+
+.themekit-system-requirements .input > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.themekit-system-requirements .input > div.invalid > i {
+    color: rgb(217, 79, 79);
+    background-color: rgb(249, 226, 226);
+}
+
+.themekit-system-requirements .input > div > i:before {
+    font-family: "Themekit Options Icons";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.themekit-system-requirements .input > div.valid > i:before {
+    content: "\6b";
+}
+
+.themekit-system-requirements .input > div > label {
+    font-weight: 600;
+    width: 100%;
+    max-width: 200px;
+}
+
+.themekit-system-requirements .input > div.valid > span {
+    color: rgb(74, 184, 102);
+}
+
+.themekit-system-requirements .input > div.invalid > span {
+    color: rgb(217, 79, 79);
+}
+
+/*
+-----------------------------------------------------------
+REPEATER
+-----------------------------------------------------------
+*/
+
+.repeater-item {
+    width: calc(100% - 30px);
+    margin-right: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.repeater-item > div {
+    display: flex;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.repeater-item > div:first-child {
+    border-top: none;
+}
+
+.repeater-item > div > label {
+    font-weight: 600;
+    width: 100%;
+    max-width: 170px;
+    line-height: 35px;
+    padding-left: 10px;
+    background: rgba(236, 236, 236, 0.30);
+    border-right: 1px solid rgb(229, 229, 229);
+}
+
+.input .repeater-item > div > input, .input .repeater-item > div > textarea, .input .repeater-item > div > select, .input .repeater-item > div > checkbox, .input .repeater-item > div > .themekit-icons {
+    font-weight: 400;
+    min-width: calc(100% - 170px);
+    border: none !important;
+    box-shadow: none !important;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.input .repeater-item > div > select {
+    padding-left: 4px;
+}
+
+.repeater-item > .themekit-close {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.input .repeater-item > div > textarea {
+    min-height: 64px;
+    line-height: 22px;
+}
+
+.themekit-repeater-add {
+    display: inline-block;
+}
+
+.themekit-setting > .input > div.themekit-repeater {
+    display: block;
+}
+
+.themekit-input-repeater {
+    min-width: calc(100% - 170px);
+}
+
+.themekit-input-repeater > div {
+    position: relative;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-right: 15px;
+}
+
+.themekit-input-repeater > div:last-child {
+    border-bottom: none;
+}
+
+.themekit-input-repeater > div > input {
+    line-height: 35px;
+    height: 35px;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.themekit-input-repeater > div > i {
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 21px;
+    margin-top: -9px;
+    right: -4px;
+    color: rgb(50, 55, 60);
+    font-size: 9px;
+    display: none;
+}
+
+.themekit-input-repeater > div:hover > i {
+    display: block;
+}
+
+.themekit-input-repeater > div:first-child > i {
+    display: block;
+    font-size: 14px;
+    right: -1px;
+}
+
+.themekit-input-repeater > div:first-child > i:before {
+    content: "\68";
+}
+
+.themekit-input-repeater > div:first-child > i:hover {
+    color: rgb(27, 133, 186);
+}
+
+/*
+-----------------------------------------------------------
+ICONS
+-----------------------------------------------------------
+*/
+.themekit-icons {
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+.themekit-icons:before {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 38px;
+    width: 20px;
+    height: 35px;
+    left: 7px;
+    position: absolute;
+    color: rgb(85, 93, 102);
+}
+
+.themekit-icons:not([class*=dashicons-]):before {
+    content: "\68";
+    font-family: "Themekit Options Icons";
+}
+
+.themekit-icons:hover:before, .themekit-icons > ul > li:hover {
+    color: rgb(23, 115, 169);
+}
+
+.themekit-icons [class^=dashicons-]:before, .themekit-icons[class*=dashicons-]:before {
+    font-family: dashicons;
+}
+
+.themekit-icons > ul {
+    position: absolute;
+    width: 276px;
+    height: 200px;
+    top: 35px;
+    margin-left: -1px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(229, 229, 229);
+    z-index: 9;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 7px;
+    padding: 7px 0px;
+    display: none;
+}
+
+.themekit-icons.active > ul {
+    display: grid;
+}
+
+.themekit-icons > ul > li {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+    color: rgb(85, 93, 102);
+}
+
+/*
+
+# SINGLE POST OPTIONS AREA
+===========================================================
+
+*/
+
+#themekit-options-button > div.inside {
+    margin-top: 13px;
+}
+
+#themekit-options-button > div.inside .themekit-options-open {
+    width: 100%;
+}
+
+#themekit-options-single .themekit-meta {
+    position: fixed;
+    left: 50%;
+    top: 70px;
+    max-width: 1200px;
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-left: -525px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: 1px solid rgb(199, 199, 199);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
+    z-index: 999;
+    background: rgb(255, 255, 255);
+}
+
+#themekit-options-single .themekit-overlay {
+    content: '';
+    position: fixed;
+    width: calc(100%);
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 95;
+    background: rgba(225, 228, 232, 0.75);
+}
+
+#themekit-options-single .themekit-header {
+    margin-top: 0;
+    border-left: none;
+    border-top: none;
+    z-index: 9999999995;
+    position: fixed;
+    top: 71px;
+    padding-right: 15px;
+    width: 100%;
+    min-height: 51px;
+    border-bottom: 1px solid rgb(226, 228, 231);
+    border-right: 1px solid rgb(226, 228, 231);
+}
+
+#themekit-options-single .themekit-header .themekit-options-save {
+    transition: background-color .3s;
+}
+
+#themekit-options-single .themekit-header .themekit-button {
+    width: auto;
+    margin-bottom: 1px;
+}
+
+#themekit-options-single .themekit-header > div {
+    padding: 5px 15px;
+    min-height: 50px;
+}
+
+#themekit-options-single .themekit-header > div > img {
+    max-height: 30px;
+    margin-top: 2px;
+}
+
+#themekit-options-single .themekit-panel {
+    z-index: 999;
+    margin-top: 60px;
+    min-height: calc(100% - 48px);
+}
+
+#themekit-options-single .themekit-panel > ul {
+    border-left: none;
+}
+
+#themekit-options-single .themekit-meta:not(.active), #themekit-options-single .themekit-meta:not(.active) + .themekit-overlay {
+    display: none;
+}
+
+#themekit-options-single .themekit-panel > main {
+    border: none;
+}
+
+#themekit-options-single .themekit-meta.themekit-loading:before {
+    color: rgb(23, 115, 169);
+    animation: themekit-loading .6s linear infinite;
+}
+
+/* 
+
+# LITE VERSION
+===========================================================
+
+*/
+
+.themekit-lite {
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.themekit-lite a {
+    display: block;
+    outline: none;
+}
+
+.themekit-lite img {
+    width: 100%;
+    display: block;
+    border: 1px solid rgb(226, 228, 231);
+}
+
+/* 
+
+# RESPONSIVE
+===========================================================
+
+*/
+@media (max-width: 1400px) {
+    .themekit-header.themekit-fixed-top {
+        max-width: calc(100% - 200px);
+    }
+
+    #themekit-options-single .themekit-meta {
+        max-width: calc(100% - 200px);
+        margin-left: 80px;
+        transform: translateX(-50%);
+    }
+
+    #themekit-options-single .themekit-header {
+        top: -1px;
+    }
+}
+
+@media (max-width: 1133px) {
+    .themekit-panel > main {
+        max-width: calc(100% - 200px);
+    }
+}
+
+@media (max-width: 960px) {
+    .themekit-header.themekit-fixed-top {
+        max-width: calc(100% - 76px);
+    }
+
+    #themekit-options-single .themekit-meta {
+        max-width: calc(100% - 70px);
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 782px) {
+    .themekit-header, .themekit-panel {
+        margin-right: 10px;
+    }
+
+    .themekit-setting {
+        flex-direction: column;
+    }
+
+    .themekit-setting > .input {
+        padding: 15px 0 0 0;
+        width: 100%;
+    }
+
+    .themekit-setting > .content {
+        width: 100%;
+    }
+
+    .themekit-panel > ul {
+        width: 40%;
+    }
+
+    .themekit-header.themekit-fixed-top {
+        max-width: calc(100% - 20px);
+    }
+
+    .themekit-header.themekit-fixed-top {
+        top: 25px;
+    }
+
+    #themekit-options-single .themekit-meta {
+        max-width: calc(100% - 30px);
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 712px) {
+    .themekit-header > div > div > a:not(.themekit-options-save) {
+        display: none;
+    }
+
+    .themekit-panel > main {
+        max-width: 100%;
+    }
+
+    .themekit-header.themekit-fixed-top {
+        top: 0;
+        margin-top: 0;
+    }
+
+    .themekit-setting > .input select {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .edit-post-sidebar > .components-panel {
+        z-index: 5;
+    }
+}
+
+@media (max-width: 600px) {
+    .themekit-header.themekit-fixed-top {
+        top: -1px;
+        margin-top: 0;
+    }
+
+    .themekit-font > .input > div {
+        display: block;
+    }
+
+    .themekit-font > .input .font-variants {
+        width: 100%;
+        min-width: 100%;
+        padding: 15px 0 0 0;
+    }
+
+    .themekit-multi-input > .input > div {
+        display: block;
+    }
+
+    .themekit-import > .input > .options, .themekit-export > .input > .options, .themekit-export > .input > .advanced {
+        display: block;
+    }
+
+    .themekit-import > .input .options > div, .themekit-export > .input .options > div, .themekit-export > .input > .advanced > div {
+        margin: 7px 0;
+    }
+
+    #themekit-options-single .themekit-meta {
+        top: 15px;
+        height: calc(100% - 30px);
+    }
+}
